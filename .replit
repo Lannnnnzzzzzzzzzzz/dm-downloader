@@ -1,0 +1,12 @@
+run = """
+npm install && 
+sudo apt-get update && 
+sudo apt-get install python3 -y && 
+python3 -m pip install yt-dlp && 
+node server.js
+"""
+modules = ["nodejs-20", "python-3.11"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
